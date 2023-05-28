@@ -1,7 +1,7 @@
 {
   "name": "workspace",
   "type": "module",
-  "version": "0.2.7",
+  "version": "0.0.1",
   "packageManager": "pnpm@8.5.1",
   "description": "Coding out of passion",
   "author": {
@@ -24,7 +24,7 @@
     "docs:build": "vitepress build docs",
     "docs:dev": "vitepress dev docs",
     "docs:preview": "vitepress preview docs",
-    "lint": "eslint --cache ."
+    "release:patch": "npx bumpp patch"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.3",

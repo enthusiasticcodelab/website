@@ -8,10 +8,14 @@
     },
     "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
   },
+  "postCreateCommand": {
+    "installGlobalDependencies": "npm install --global @antfu/ni bumpp taze"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
         "antfu.open-in-github-button",
+        "bierner.markdown-emoji",
         "dbaeumer.vscode-eslint",
         "eamodio.gitlens",
         "ibm.output-colorizer",
@@ -21,7 +25,8 @@
         "sonarsource.sonarlint-vscode",
         "streetsidesoftware.code-spell-checker",
         "usernamehw.errorlens",
-        "yoavbls.pretty-ts-errors"
+        "yoavbls.pretty-ts-errors",
+        "yzhang.markdown-all-in-one"
       ],
       "settings": {
         "editor.detectIndentation": false,
