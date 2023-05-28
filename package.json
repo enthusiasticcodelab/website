@@ -10,16 +10,19 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/enthusiasticcodelab/website#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enthusiasticcodelab/website.git"
+  },
+  "engines": {
+    "node": ">=16.16.0"
+  },
   "contributors": [
     {
       "name": "Csaba Nagy",
       "url": "https://github.com/csaba-nagy"
     }
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/enthusiasticcodelab/website.git"
-  },
   "scripts": {
     "docs:build": "vitepress build docs",
     "docs:dev": "vitepress dev docs",
