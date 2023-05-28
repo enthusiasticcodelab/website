@@ -1,0 +1,46 @@
+{
+  "name": "workspace",
+  "type": "module",
+  "version": "0.2.7",
+  "packageManager": "pnpm@8.5.1",
+  "description": "Coding out of passion",
+  "author": {
+    "name": "Nándor Dudás",
+    "url": "https://github.com/nandordudas"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/enthusiasticcodelab/website#readme",
+  "contributors": [
+    {
+      "name": "Csaba Nagy",
+      "url": "https://github.com/csaba-nagy"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enthusiasticcodelab/website.git"
+  },
+  "scripts": {
+    "docs:build": "vitepress build docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:preview": "vitepress preview docs",
+    "lint": "eslint --cache ."
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.3",
+    "eslint": "^8.41.0",
+    "vitepress": "1.0.0-beta.1"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "@antfu"
+    ]
+  }
+}

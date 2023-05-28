@@ -1,0 +1,71 @@
+{
+  "name": "Node.js & TypeScript",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-20",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+      "omzPlugins": "https://github.com/z-shell/F-Sy-H https://github.com/zsh-users/zsh-autosuggestions",
+      "plugins": "git F-Sy-H zsh-autosuggestions"
+    },
+    "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "antfu.open-in-github-button",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "ibm.output-colorizer",
+        "mhutchie.git-graph",
+        "ms-azuretools.vscode-docker",
+        "mutantdino.resourcemonitor",
+        "sonarsource.sonarlint-vscode",
+        "streetsidesoftware.code-spell-checker",
+        "usernamehw.errorlens",
+        "yoavbls.pretty-ts-errors"
+      ],
+      "settings": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "files.encoding": "utf8",
+        "files.eol": "\n",
+        "files.insertFinalNewline": true,
+        "files.trimTrailingWhitespace": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true,
+          "source.fixAll": false,
+          "source.organizeImports": false
+        },
+        "editor.formatOnSave": false,
+        "editor.formatOnSaveMode": "modificationsIfAvailable",
+        "editor.formatOnType": false,
+        "eslint.codeActionsOnSave.mode": "problems",
+        "eslint.validate": [
+          "html",
+          "javascript",
+          "json",
+          "json5",
+          "jsonc",
+          "markdown",
+          "typescript",
+          "vue",
+          "yaml"
+        ],
+        "dotfiles.repository": "enthusiasticcodelab/dotfiles",
+        "errorLens.excludeBySource": [
+          "cSpell",
+          "eslint"
+        ],
+        "errorLens.fontStyleItalic": true,
+        "errorLens.fontWeight": "100",
+        "editor.rulers": [
+          80,
+          120
+        ],
+        "editor.wordWrapColumn": 120,
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "typescript.updateImportsOnFileMove.enabled": "always"
+      }
+    }
+  }
+}

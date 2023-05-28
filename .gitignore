@@ -1,0 +1,9 @@
+.pnpm-store
+.vscode
+cache
+coverage
+dist
+node_modules
+
+.env
+.eslintcache
