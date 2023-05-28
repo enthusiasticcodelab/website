@@ -27,7 +27,7 @@
     "docs:build": "vitepress build docs",
     "docs:dev": "vitepress dev docs",
     "docs:preview": "vitepress preview docs",
-    "release:patch": "npx bumpp patch"
+    "release:patch": "npx bumpp patch --yes"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.3",
