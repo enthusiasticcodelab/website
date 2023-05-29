@@ -1,15 +1,16 @@
 {
   "name": "Node.js & TypeScript",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-20",
+  "image": "ghcr.io/enthusiasticcodelab/typescript-node:latest",
   "features": {
     "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
       "omzPlugins": "https://github.com/z-shell/F-Sy-H https://github.com/zsh-users/zsh-autosuggestions",
       "plugins": "git F-Sy-H zsh-autosuggestions"
     },
-    "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
+    "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
+    "ghcr.io/devcontainers/features/java": ""
   },
   "postCreateCommand": {
-    "installGlobalDependencies": "npm install --global @antfu/ni bumpp taze"
+    "installGlobalDependencies": "pnpm install"
   },
   "customizations": {
     "vscode": {
