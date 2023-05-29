@@ -4,8 +4,3 @@
 [build]
   publish = "docs/.vitepress/dist"
   command = "pnpm run docs:build"
-
-[[headers]]
-   for = "/*"
-   [headers.values]
-      Access-Control-Allow-Origin = "*"
