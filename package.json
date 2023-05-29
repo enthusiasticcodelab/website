@@ -2,7 +2,7 @@
   "name": "workspace",
   "type": "module",
   "version": "0.1.2",
-  "packageManager": "pnpm@8.5.1",
+  "packageManager": "pnpm@8.6.0",
   "description": "Coding out of passion",
   "author": {
     "name": "Nándor Dudás",
