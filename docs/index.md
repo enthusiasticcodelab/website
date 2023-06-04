@@ -3,23 +3,26 @@
 layout: home
 
 hero:
-  name: "Enthusiastic Code Lab"
-  text: "Coding out of passion"
-  tagline: My great project tagline
+  name: Enthusiastic Code Lab
+  text: Coding out of passion
+  tagline: |
+    We are a passionate group of developers and enthusiasts who love coding and
+    exploring new technologies. Our goal is to create innovative and impactful
+    projects that inspire others and contribute to the open-source community.
+  image:
+    src: /logo.webp
+    alt: Enthusiastic Code Lab
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Get started
+      link: /introduction
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 📺 Watch video introduction
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: ⚙️ Pre-set
+    details: |
+      All repositories and examples require only a quick setup to getting up
+  - title: 🏢 Modular
+    details: You can use packages individually
 ---
-

@@ -1,28 +1,24 @@
 import { defineConfig } from 'vitepress'
 
-import { homepage as link } from '../../package.json'
+import { enConfig } from './en'
+import { huConfig } from './hu'
+import { sharedConfig } from './shared'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'Enthusiastic Code Lab',
-  description: 'Coding out of passion',
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
-    ],
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ],
-      },
-    ],
-    socialLinks: [
-      { icon: 'github', link },
-    ],
+  ...sharedConfig,
+  locales: {
+    root: {
+      label: 'English',
+      lang: 'en-US',
+      link: '/',
+      ...enConfig,
+    },
+    hu: {
+      label: 'Magyar',
+      lang: 'hu-HU',
+      link: '/hu/',
+      ...huConfig,
+    },
   },
 })
