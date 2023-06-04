@@ -1,5 +1,5 @@
 {
-  "name": "Node.js & TypeScript",
+  "name": "website",
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
   "workspaceFolder": "/workspace",
@@ -10,5 +10,12 @@
     },
     "ghcr.io/enthusiasticcodelab/devcontainer-features/typescript-node:latest": {},
     "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "window.title": "${dirty}${activeEditorShort}${separator}Enthusiastic Code Lab"
+      }
+    }
   }
 }
