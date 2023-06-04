@@ -22,7 +22,7 @@ export const sharedConfig = defineConfig({
     ],
     socialLinks: [
       { icon: 'github', link },
-      { icon: 'youtube', link: 'https://www.youtube.com/channel/UCN4lY37cs8a4tOjlAYRcXWQ' },
+      { icon: 'youtube', link: 'https://www.youtube.com/@enthusiasticcodelab' },
     ],
   },
 })
